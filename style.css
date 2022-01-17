@@ -23,6 +23,12 @@ h4 {
 a {
   color: var(--color-principal);
 }
+p{
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 150%;
+}
 .section {
   min-height: 100vh;
 
@@ -86,4 +92,46 @@ a {
 }
 .section__section-button {
   font-size: 16px;
+  text-align: center;
+}
+.--about-me{
+  padding: 10px 30px 0px 30px;
+}
+.section__title{
+  margin: 10px 0;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+.section__content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.content__image{
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  background-color: #BDBDBD;
+}
+.section__subtitle{
+  font-size: 20px;
+  font-weight: 600;
+}
+.section__skill-list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  padding: 0;
+
+  list-style-type: none;
+}
+.skill-list__item{
+  text-align: center;
 }
