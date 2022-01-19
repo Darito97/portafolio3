@@ -31,16 +31,15 @@ p {
   line-height: 150%;
 }
 .section {
-  min-height: 100vh;
-
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-.--header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+  min-height: 100vh;
+
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .section__section-principal {
   display: flex;
