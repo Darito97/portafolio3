@@ -10,3 +10,4 @@ He realizado tanto diseño movil como diseño de pc, estan realizados en figma y
 - [Diseño para PC](https://www.figma.com/file/6VY23KbAyF4QUmHVsZJs8E/Portafolio-v3.0-dise%C3%B1o?node-id=34%3A875)
 - [Diseño para movil](https://www.figma.com/file/6VY23KbAyF4QUmHVsZJs8E/Portafolio-v3.0-dise%C3%B1o?node-id=34%3A327)
 
+[Vista previa](https://darito97.github.io/portafolio3/)
