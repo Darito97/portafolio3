@@ -239,6 +239,9 @@ p {
 .section-button__icon {
   transform: rotate(180deg);
 }
+.--final{
+  padding-bottom: 40px;
+}
 @media only screen and (min-width: 600px) {
   .--about-me,
   .--my-projects {
