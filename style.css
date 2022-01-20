@@ -3,7 +3,6 @@
   --color-secundario: #111f4d;
   --background-color-principal: #f2f4f7;
 
-
   scroll-behavior: smooth;
 }
 
@@ -108,7 +107,7 @@ p {
   font-size: 24px;
   font-weight: 600;
 }
-.section__description{
+.section__description {
   margin-bottom: 20px;
 }
 .section__content {
@@ -127,7 +126,7 @@ p {
 
   background-color: #bdbdbd;
 }
-.content__text{
+.content__text {
   width: 100%;
 }
 .section__subtitle {
@@ -179,6 +178,8 @@ p {
 .project__image {
   width: 100%;
   height: 148px;
+  object-fit: cover;
+  object-position: center;
 
   background-color: #bdbdbd;
   border-radius: 8px 8px 0 0;
@@ -202,7 +203,6 @@ p {
   align-items: center;
   justify-content: space-around;
 
-
   height: 35px;
   width: 120px;
 
@@ -211,7 +211,7 @@ p {
   font-size: 16px;
   font-weight: 600;
 }
-.--preview{
+.--preview {
   background-color: var(--color-principal);
   color: var(--background-color-principal);
 }
@@ -222,68 +222,70 @@ p {
   height: 20px;
   width: 20px;
 }
-.--cod{
+.--cod {
   border: 3px solid var(--color-principal);
 }
-.section__hint-text{
+.section__hint-text {
   color: #bdbdbd;
   text-align: center;
   margin: 40px 0;
 }
-.section__section-button{
+.section__section-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.section-button__icon{
+.section-button__icon {
   transform: rotate(180deg);
 }
-@media only screen and (min-width: 600px){
-  .--about-me, .--my-projects{
+@media only screen and (min-width: 600px) {
+  .--about-me,
+  .--my-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .section__title{
+  .section__title {
     width: 100%;
     max-width: 480px;
   }
-  .content__text{
+  .content__text {
     max-width: 480px;
   }
 }
-@media only screen and (min-width: 760px){
-  .section-principal__title{
+@media only screen and (min-width: 760px) {
+  .section-principal__title {
     max-width: 540px;
     font-size: 32px;
   }
-  .section-principal__social-link{
+  .section-principal__social-link {
     height: 35px;
     width: 35px;
     object-fit: contain;
   }
-  .section-principal__social-link svg{
+  .section-principal__social-link svg {
     height: 35px;
     width: 35px;
   }
-  .--link-principal, .--link-principal svg{
+  .--link-principal,
+  .--link-principal svg {
     height: 40px;
     width: 40px;
   }
 
-  .section__title{
+  .section__title {
     max-width: 760px;
     font-size: 30px;
   }
-  .section__subtitle{
+  .section__subtitle {
     font-size: 26px;
   }
-  .section__content{
+  .section__content {
     flex-wrap: nowrap;
     width: 760px;
   }
-  .project-list__project{
+  .project-list__project {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -294,13 +296,13 @@ p {
 
     padding: 0;
   }
-  .project__image{
+  .project__image {
     height: 100%;
     width: 320px;
 
     border-radius: 8px 0 0 8px;
   }
-  .project__content{
+  .project__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -311,26 +313,56 @@ p {
 
     padding: 20px;
   }
-  .project__buttons{
+  .project__buttons {
     align-self: center;
   }
 
-  .project__title{
+  .project__title {
     font-size: 24px;
   }
-  .project__title, .project__buttons {
+  .project__title,
+  .project__buttons {
     width: 100%;
     margin: 0;
   }
-  .buttons__button{
+  .buttons__button {
     height: 40px;
     width: 140px;
-
+    cursor: pointer;
   }
-  .buttons__line{
+  .buttons__line {
     margin: 0;
   }
-  .section__section-button{
+  .section__section-button {
     font-size: 18px;
+  }
+
+  /*Hovers, actives*/
+  .section-principal__social-link:active {
+    animation: rotar 0.1s linear;
+  }
+  .section__section-button:hover,
+  .section-principal__social-link:hover,
+  .--preview:hover,
+  .--cod:hover {
+    transition: all 0.1s linear;
+    transform: scale(1.05);
+  }
+  .--preview:active {
+    transition: all 0.1s linear;
+    border-color: var(--background-color-principal);
+  }
+  .--cod:active {
+    background-color: var(--color-principal);
+
+    color: var(--background-color-principal);
+  }
+  @keyframes rotar {
+    to {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
   }
 }
