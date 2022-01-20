@@ -102,13 +102,14 @@ p {
   padding: 10px 30px 40px 30px;
 }
 .section__title {
-  margin: 10px 0;
+  margin-bottom: 10px;
 
   font-size: 24px;
   font-weight: 600;
 }
 .section__description {
   margin-bottom: 20px;
+  text-align: center;
 }
 .section__content {
   display: flex;
@@ -242,7 +243,7 @@ p {
 .--final{
   padding-bottom: 40px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 760px) {
   .--about-me,
   .--my-projects {
     display: flex;
@@ -251,10 +252,6 @@ p {
   }
   .section__title {
     width: 100%;
-    max-width: 480px;
-  }
-  .content__text {
-    max-width: 480px;
   }
 }
 @media only screen and (min-width: 760px) {
@@ -278,7 +275,6 @@ p {
   }
 
   .section__title {
-    max-width: 760px;
     font-size: 30px;
   }
   .section__subtitle {
