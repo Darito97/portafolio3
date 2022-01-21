@@ -53,8 +53,11 @@ p {
 .section-principal__image {
   height: 180px;
   width: 180px;
+  object-fit: contain;
+  object-position: center;
 
-  background-color: #111f4d;
+  background-color: var(--background-color-principal);
+  border: #111f4d 5px solid;
   border-radius: 50%;
 }
 .section-principal__title {
@@ -122,10 +125,8 @@ p {
   height: 200px;
   width: 100%;
   max-width: 260px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-
-  background-color: #bdbdbd;
 }
 .content__text {
   width: 100%;
