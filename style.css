@@ -192,6 +192,10 @@ p {
   margin: 10px 20px;
   height: 50px;
 }
+.project__description{
+  color: #212121;
+  font-size: 14px;
+}
 .project__buttons {
   display: flex;
   align-items: center;
@@ -336,6 +340,9 @@ p {
     box-sizing: border-box;
 
     padding: 20px;
+  }
+  .project__description{
+    font-size: 16px;
   }
   .project__buttons {
     align-self: center;
